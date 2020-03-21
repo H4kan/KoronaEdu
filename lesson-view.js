@@ -62,6 +62,8 @@ function send_message(message){
 
 const messages = []; 
 
+
+
 clicker.addEventListener("click", clickerHandler);
 
 updateUsers();

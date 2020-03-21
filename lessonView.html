@@ -87,10 +87,10 @@
             	<li> <span class="message0"></span> </li>
             </ul>
 	    <div class="chatInput">
-            <input type="text" placeholder="napisz coś..." id = "message">
+            <input type="text" placeholder="napisz coś..." id = "message" onkeydown = "if (event.keyCode==13) document.getElementById('send').click()">
             <button class="emote">
             </button>
-            <button class="arrow" onclick = "send_message(get_message())">
+            <button class="arrow" id = "send" onclick = "send_message(get_message())">
             </button>
             <button class="handRaise">Podnieś rękę</button>
         </div>

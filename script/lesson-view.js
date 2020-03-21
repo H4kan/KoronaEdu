@@ -43,3 +43,15 @@ clickerHandler = () => {
 clicker.addEventListener("click", clickerHandler);
 
 updateUsers();
+
+handRaised = () => {
+    studentList[0].style.border = "2px solid #b2c52e";
+    setTimeout(() => {
+        studentList[0].style.border = "1px solid rgba(0,0,0,.4)";
+    }, 5000)
+}
+
+const handRaiseBtn = document.querySelector(".handRaise");
+
+if (handRaiseBtn)
+    handRaiseBtn.addEventListener("click", handRaised)

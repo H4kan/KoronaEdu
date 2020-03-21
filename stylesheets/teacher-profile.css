@@ -1,39 +1,4 @@
 
-* {
-    margin: 0;
-    font-family: arial;
-}
-
-body {
-    background-color: #fff;
-}
-li {
-    list-style: none;
-}
-
-nav {
-    background-color: #000;
-    color: white;
-}
-nav ul {
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-nav li {
-    
-    padding: 1%;
-    box-sizing: content-box;
-    text-align: center;
-    flex-grow: 1;
-    cursor: pointer;
-    transition: .2s;
-}
-nav li:hover {
-    background-color: #333;
-}
-
 section#top {
     height: 40vh;
     display: flex;
@@ -75,7 +40,7 @@ section#top #profile {
 .info p:first-child {
     font-size: 30px;
     text-transform: uppercase;
-    color: green;
+    color: #b2c52e;
 }
 
 .settings {
@@ -107,7 +72,7 @@ section#top #profile {
 }
 
 #lessonHub .list {
-    margin: 5vh 2vw 0 10vw;
+    margin: 5vh 2vw 0 3vw;
     min-height: 30vh;
 }
 .list ul {
@@ -130,7 +95,7 @@ section#top #profile {
     display: block;
     padding: 0;
     margin: 0 5vw;
-    color: green;
+    color: #b2c52e;
 }
 
 #lessonHub .bottom {
@@ -140,10 +105,11 @@ section#top #profile {
 #lessonHub .addClass {
    display: inline;
    padding: 20px 70px;
-   background-color: green;
+   background-color: #b2c52e;
    border-style: none;
    text-transform: uppercase;
    color: white;
    font-size: 20px;
    border-radius: 20%;
+   cursor: pointer;
 }

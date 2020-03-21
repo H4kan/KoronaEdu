@@ -26,7 +26,9 @@ function addKlass(){
 		}
 		liEl.appendChild(spanEL[i]);
 	}
-	document.querySelector(".list ul").appendChild(liEl);
+	const ulEl = document.querySelector(".list ul");
+	ulEl.appendChild(liEl);
+	if (ulEl.childElementCount > 5) liEl.style.display = "none";
 	}
 function load() { 
      let el = document.querySelector("button.addClass"); 

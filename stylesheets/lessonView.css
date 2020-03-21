@@ -29,7 +29,7 @@
 }
 
 .userVideo .teacher {
-    flex-basis: 25%;
+    flex-basis: calc(0.25 * 85vh);
     border-radius: 10%;
     background-color: red;
 }

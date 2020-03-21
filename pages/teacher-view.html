@@ -54,16 +54,22 @@
                 <span class="name"></span>
                 <span class="result">0</span>
             </div>
-            <button>Wyłącz punkty</button>
         </div>
+        <button class="active">Wyłącz punkty</button>
         </div>
         <div class="screenBox">
             <p>Ekran</p>
-            <div class="screen"></div>
+            <div class="screen">
+                <div class="toolbar">
+                    <button class="pencil">Ołówek</button>
+                    <button class="rubber">Gumka</button>
+                </div>
+                <canvas></canvas>
+            </div>
             <div class="menu">
-            <input type="text" placeholder="wklej link...">
+            <input type="text" placeholder="wklej link..."  id="disabledFunction">
             lub
-            <button class="loadPres">Załaduj prezentację</button>
+            <button class="loadPres" id="disabledFunction">Załaduj prezentację</button>
             lub
             <button class="openTable">Otwórz tablicę</button>
         </div>
@@ -73,7 +79,7 @@
             <div class="chatScreen"></div>
             <div class="chatInput">
             <input type="text" placeholder="napisz coś...">
-            <button class="emote">
+            <button class="emote"  id="disabledFunction">
             </button>
             <button class="arrow">
             </button>

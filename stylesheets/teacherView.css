@@ -7,6 +7,7 @@
     height: 85vh;
 }
 .userVideo button  {
+    display: block;
     border-style: none;
     background-color: #b2c52e;
     padding: 15px 5px;
@@ -18,11 +19,18 @@
 }
 
 .userVideo button:last-child {
-    margin-top: 10px;
-    padding: 5px 5px;
+    display: block;
+    position: relative;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 5px 2px;
+    background-color: red;
     font-size: 16px;
 }
-
+.userVideo button:last-child.active {
+    background-color: #b2c52e;
+}
 .screen {
     position: relative;
     transition: .2s;
@@ -39,5 +47,54 @@
 }
 
 .screen.disabled {
+    z-index: 2;
     background-color: gray;
+}
+
+.screen .toolbar {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 50%;
+    right: 0%;
+    width: 7%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, .2);
+    height: 50%;
+    transition: .3s;
+}
+
+.screen .toolbar.active {
+    opacity: 1;
+}
+.screen .toolbar button {
+    display: none;
+}
+
+.screen .toolbar.active button {
+    display: block;
+    font-size: 13px;
+    width: 80%;
+}
+
+.screen .toolbar.active button.active {
+    background-color: #b2c52e;
+    color: white
+}
+
+.screen canvas {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+.screen .toolbar.toolbar.active+canvas {
+    display: block;
+    z-index: -1;
 }

@@ -41,3 +41,8 @@ nav a {
     text-decoration: none;
 }
 
+#disabledFunction {
+    opacity: .5;
+    cursor: default;
+}
+

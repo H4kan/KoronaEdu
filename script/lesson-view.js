@@ -13,7 +13,10 @@ for (let i = 0; i < users.length; i++) {
     studentList[i].querySelector('.result').textContent = users[i].points;
     }
 }
-
+function updateScore(){
+	let q=document.querySelector("#1 .result");
+	q.innerHTML=users[0].clicked;
+}
 const screenEl = document.querySelector(".screen");
 const clicker = document.createElement("div");
 clicker.classList.add("clicker");
@@ -29,11 +32,15 @@ initializeClicker = () => {
     clicker.style.display = "block";
     setTimeout(() => {
         if (!clicker.classList.contains("clicked")) {
-            users[0].missed++; 
-            clicker.classList.add("clicked");
+			users[0].missed++; 
+			clicker.classList.add("clicked");
         }
-        else {users[0].clicked++;}
+        else {
+			users[0].clicked++;
+			updateScore();
+		}
     }, clickerLifetime);
+	possibility();
 }
 
 clickerHandler = () => {
@@ -43,3 +50,8 @@ clickerHandler = () => {
 clicker.addEventListener("click", clickerHandler);
 
 updateUsers();
+function possibility(){
+	setInterval(function(){
+		initializeClicker();
+	}, clickerLifetime*2);
+}

@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../stylesheets/lessonView.css">
-    <link rel="stylesheet" href="../stylesheets/teacherView.css">
     <title>KoronaEdu | Lekcja</title>
 </head>
-<body>
+<body onload="possibility()">
     <nav>
         <ul>
-			<li><a href="../index.html">Strona główna</a></li>
+            <li><a href="../index.html">Strona główna</a></li>
             <li><a href="./teacher-profile.html">Profil nauczyciela</a></li>
             <li><a href="./teacher-view.html">Widok nauczyciela</a></li>
             <li><a href="./student-view.html">Widok ucznia</a></li>
@@ -19,7 +18,6 @@
     </nav>
     <section id="main">
          <div class="userVideo">
-             <button>Zakończ lekcję</button>
             <div class="teacher"></div>
             <div class="studentTab">
             <div class="student" id="1">
@@ -54,19 +52,11 @@
                 <span class="name"></span>
                 <span class="result">0</span>
             </div>
-            <button>Wyłącz punkty</button>
         </div>
         </div>
         <div class="screenBox">
             <p>Ekran</p>
             <div class="screen"></div>
-            <div class="menu">
-            <input type="text" placeholder="wklej link...">
-            lub
-            <button class="loadPres">Załaduj prezentację</button>
-            lub
-            <button class="openTable">Otwórz tablicę</button>
-        </div>
         </div>
         <div class="chat">
             <p>Czat</p>
@@ -78,9 +68,9 @@
             <button class="arrow">
             </button>
         </div>
+            <button class="handRaise">Podnieś rękę</button>
         </div>
     </section>
     <script src="../script/lesson-view.js"></script>
-    <script src="../script/teacher-view.js"></script>
 </body>
 </html>

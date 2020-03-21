@@ -1,0 +1,161 @@
+
+#main {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#main .userVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 15vw;
+    height: 80vh;
+}
+
+
+#main .screen {
+    width: 65vw;
+    height: 80vh;
+    border: 3px solid rgba(0,0,0,.4);
+}
+
+
+#main .chat {
+    width: 17vw;
+    height: 80vh;
+    border: 1px solid rgba(0,0,0,.4);
+}
+
+.userVideo .teacher {
+    flex-basis: 25%;
+    border-radius: 10%;
+    background-color: red;
+}
+
+.userVideo .studentTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60%;
+}
+
+.userVideo .student {
+    flex-basis: 40%;
+    height: calc(100% / 4);
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.4);
+}
+.userVideo .student:nth-child(1) {
+    border-top-left-radius: 30%;
+}
+.userVideo .student:nth-child(2) {
+    border-top-right-radius: 30%;
+}
+
+.screenBox p {
+    padding-left: 30%;
+    color: rgba(0,0,0,.4);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.screenBox .screen {
+    border-radius: 3%;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+}
+.chat .chatScreen {
+    flex-grow: 1;
+}
+.chat p {
+    padding: 5%;
+    color: #b2c52e;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0,0,0,.4);
+}
+.chat .chatInput {
+    border: 2px solid gray;
+    border-radius: 15%;
+    padding: 2%;
+    margin: 3%;
+    display: flex;
+}
+.chat input {
+    width: 80%;
+    padding-left: 5%;
+    border: 0;
+}
+.chat .emote, .chat .arrow {
+    min-height: 30px;
+    min-width: 30px;
+    width: 10%;
+    background-size: stretch;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-style: none;
+    cursor: pointer;
+}
+.chat .emote {
+    background-image: url(../img/emoji.png);
+}
+.chat .arrow {
+    background-image: url(../img/arrow.png);
+}
+
+.chat .handRaise {
+    margin: 3%;
+    padding: 4%;
+    border-radius: 20%;
+    border-style: none;
+    background-color: #b2c52e;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.screenBox .menu {
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-170%)
+}
+.screenBox .menu input {
+    flex-basis: 30%;
+    padding: 1%;
+    font-size: 18px;
+    margin-right: 2%;
+    padding-left: 2%;
+    border: 1px solid rgba(0,0,0,.4);
+    border-radius: 20%;
+    
+}
+.screenBox button {
+    flex-basis: 20%;
+}
+.screenBox .menu * {
+    flex-grow: 1;
+}
+.screenBox button {
+    margin: 0 2%;
+    padding: 1%;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: lighter;
+    border-style: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.4);
+    border-radius: 20%;
+    cursor: pointer;
+}

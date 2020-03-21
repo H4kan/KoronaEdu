@@ -44,6 +44,7 @@
 
 .userVideo .student {
     flex-basis: 40%;
+    position: relative;
     height: calc(100% / 4);
     box-sizing: border-box;
     border: 1px solid rgba(0,0,0,.4);
@@ -158,4 +159,40 @@
     border: 1px solid rgba(0,0,0,.4);
     border-radius: 20%;
     cursor: pointer;
+}
+
+.screen .clicker {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 50%;
+    background-color: red;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.clicker.clicked {
+    background-color: #b2c52e;
+    opacity: 0;
+}
+
+.student span.name {
+    position: relative;
+    display: block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.student span.result {
+    display: block;
+    padding: 2px 7px 2px 2px;
+    background-color: #b2c52e;
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    bottom: 0;
+    right: 0;
 }

@@ -5,53 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../stylesheets/lessonView.css">
+    <link rel="stylesheet" href="../stylesheets/teacherView.css">
     <title>KoronaEdu | Lekcja</title>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="../index.html">Strona główna</a></li>
+			<li><a href="../index.html">Strona główna</a></li>
             <li><a href="./teacher-profile.html">Profil nauczyciela</a></li>
-            <li><a href="./lessonView.html">Widok nauczyciela</a></li>
-            <li><a href="./studentView.html">Widok ucznia</a></li>
+            <li><a href="./teacher-view.html">Widok nauczyciela</a></li>
+            <li><a href="./student-view.html">Widok ucznia</a></li>
         </ul>
     </nav>
     <section id="main">
          <div class="userVideo">
+             <button>Zakończ lekcję</button>
             <div class="teacher"></div>
             <div class="studentTab">
-            <div class="student">
+            <div class="student" id="1">
                 <span class="name"></span>
                 <span class="result">0</span>
             </div>
-            <div class="student">
+            <div class="student" id="2">
                 <span class="name"></span>
                 <span class="result">0</span>
             </div>
-            <div class="student">
+            <div class="student" id="3">
                 <span class="name"></span>
                 <span class="result">0</span>
             </div>
-            <div class="student">
+            <div class="student" id="4">
                 <span class="name"></span>
                 <span class="result">0</span>
             </div>
-            <div class="student">
+            <div class="student" id="5">
                 <span class="name"></span>
                 <span class="result">0</span>
             </div>
-            <div class="student">
+            <div class="student" id="6">
                 <span class="name"></span>
                 <span class="result">0</span>
             </div>
-            <div class="student">
+            <div class="student" id="7">
                 <span class="name"></span>
                 <span class="result">0</span>
             </div>
-            <div class="student">
+            <div class="student" id="8">
                 <span class="name"></span>
                 <span class="result">0</span>
             </div>
+            <button>Wyłącz punkty</button>
         </div>
         </div>
         <div class="screenBox">
@@ -75,9 +78,9 @@
             <button class="arrow">
             </button>
         </div>
-            <button class="handRaise">Podnieś rękę</button>
         </div>
     </section>
     <script src="../script/lesson-view.js"></script>
+    <script src="../script/teacher-view.js"></script>
 </body>
 </html>

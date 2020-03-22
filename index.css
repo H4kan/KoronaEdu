@@ -31,6 +31,22 @@ nav li {
     cursor: pointer;
     transition: .2s;
 }
+nav li:first-child {
+    flex-grow: 0;
+    cursor: default;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+nav .logo {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    background-size: stretch;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/logo.png);
+}
 nav li:hover {
     background-color: #333;
 }
@@ -94,7 +110,7 @@ nav a {
 
 #content .imgBoard {
     display: flex;
-    width: 100%;
+    width: 60%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;

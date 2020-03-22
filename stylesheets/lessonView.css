@@ -31,7 +31,11 @@
 .userVideo .teacher {
     flex-basis: calc(0.25 * 85vh);
     border-radius: 10%;
-    background-color: red;
+    border: 2px solid black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/teacher.png);
 }
 
 .userVideo .studentTab {

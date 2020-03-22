@@ -200,3 +200,12 @@
     bottom: 0;
     right: 0;
 }
+.chat ul {
+    padding: 0;
+}
+.chat li {
+    padding: 10px;
+}
+.chat li span:nth-child(1) {
+    color: blue;
+}

@@ -61,18 +61,20 @@
         <div class="chat">
             <p>Czat</p>
             <div class="chatScreen"></div>
+            <ul>
+            </ul>
             <div class="chatInput">
-            <input type="text" placeholder="napisz coś...">
-            <button class="emote">
-            </button>
-            <button class="arrow">
-            </button>
+                <input type="text" placeholder="napisz coś..." id = "message" onkeydown = "if (event.keyCode==13) document.getElementById('send').click()">
+                <button class="emote">
+                </button>
+                <button class="arrow" id = "send">
+                </button>
         </div>
             <button class="handRaise">Podnieś rękę</button>
         </div>
     </section>
     <script src="../script/lesson-view.js"></script>
+    <script src="../script/chatStudent.js"></script>
     <script src="../script/student-view.js"></script>
-    <script src="../script/chat.js"></script>
 </body>
 </html>

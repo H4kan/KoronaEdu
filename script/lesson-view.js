@@ -17,6 +17,7 @@ for (let i = 0; i < users.length; i++) {
 const screenEl = document.querySelector(".screen");
 const clicker = document.createElement("div");
 clicker.classList.add("clicker");
+clicker.classList.add("clicked");
 screenEl.appendChild(clicker);
 
 

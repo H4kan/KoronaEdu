@@ -63,7 +63,8 @@ nav a {
 }
 
 .banner {
-    background-size: stretch;
+    background-image: url(img/background.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: blue;
@@ -134,7 +135,8 @@ nav a {
 }
 
 .downBanner {
-    background-size: stretch;
+    background-image: url(img/background.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 10vh;
